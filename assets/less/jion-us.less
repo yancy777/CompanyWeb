@@ -1,0 +1,306 @@
+﻿@import "base.less";
+
+.header {
+    width: 100%;
+    height: 27.6rem;
+    background: #FFFFFF;
+    background: url(../image/nav-jionUs.png) no-repeat center 0rem;
+    background-size: contain;
+    padding-left: 0rem;
+}
+
+.li-joinUs-active{
+ a{
+        color: #fff;
+    }
+}
+/*市场前景*/
+#marketProspect {
+    height: 20rem;
+    background: #f9f9f9;
+
+    .market-padding-top {
+        padding-top: 3.5rem;
+    }
+
+    .col-md-6 {
+        text-align: center;
+
+        h1 {
+            padding: 1rem;
+            font-size: .8rem;
+        }
+
+        hr {
+            border-bottom: 1px dashed #dddddd;
+             margin-left: -5rem;
+            width:130%;
+        }
+
+        .sm-title {
+            line-height: 2.5rem;
+            text-align: left;
+            font-size: 1rem;
+        }
+
+        .text-box {
+            padding: 1rem 2.5rem;
+            line-height: 1rem;
+            border: 1px solid #dddddd;
+            height: 11.6rem;
+            background: #fff;
+
+            img {
+                margin-top: -3.5rem;
+            }
+
+            h3 {
+                padding: .75rem 0;
+                font-size: .75rem;
+                color: #ef4e42;
+            }
+
+            p {
+                text-align: left;
+                color: #444444;
+                font-size: .55rem;
+            }
+        }
+    }
+}
+/*服务与支持*/
+#serviceSupport {
+    height: 37.5rem;
+
+    .col-md-4 {
+        margin-left: -0.3rem;
+    }
+
+    .col-md-6 {
+        text-align: center;
+        height: 36rem;
+
+        h1 {
+            padding: 1rem;
+            font-size: .8rem;
+        }
+
+        hr {
+            border-bottom: 1px dashed #dddddd;
+            width: 130%;
+            margin-left: -5rem;
+        }
+
+        .sm-title {
+            line-height: 2.5rem;
+            text-align: left;
+            font-size: 1rem;
+        }
+
+        h3 {
+            padding: 1rem 0;
+            font-size: .75rem;
+        }
+
+        p {
+            color: #848484;
+            font-size: .55rem;
+            line-height: 1rem;
+            width: 7.5rem;
+            margin-left: -.75rem;
+            text-align: left;
+        }
+    }
+
+    .text-box {
+        padding: 3.4rem 3.5rem;
+        line-height: 7.5rem;
+        height: 16.1rem;
+        width: 12.1rem;
+        background: url(../image/polygon-bg.png) no-repeat center;
+        background-size: contain;
+    }
+}
+
+.row-bottom {
+    position: relative;
+    top: -5.4rem;
+    left: -.13rem;
+}
+
+/*合作要求*/
+#cooperationRequirements {
+    background: #f9f9f9;
+    height: 23rem;
+    text-align: center;
+    margin-top:2rem;
+
+
+
+    .col-md-8 {
+        text-align: center;
+
+        h1 {
+            padding: 1rem;
+            font-size: .8rem;
+        }
+
+        hr {
+            border-bottom: 1px dashed #dddddd;
+        }
+
+        img {
+            float: right;
+        }
+
+        p {
+            height: 7.25rem;
+            color: #000000;
+            font-size: .55rem;
+            line-height: 1rem;
+            padding-top: .5rem;
+            text-align: left;
+        }
+    }
+}
+/*合作流程*/
+#cooperationSteps {
+    height: 15.5rem;
+
+    .col-md-10 {
+        text-align: center;
+
+        h1 {
+            padding: 1rem;
+            font-size: .8rem;
+        }
+
+        hr {
+            border-bottom: 1px dashed #dddddd;
+            width: 80%;
+        }
+
+        img {
+            padding-top: 1rem;
+            background-size: 100%;
+            padding: 1rem;
+        }
+
+        h3 {
+            padding: .75rem 0;
+            font-size: .75rem;
+        }
+    }
+}
+
+.product-title{
+        font-size:.8rem;
+        padding-top:1rem;
+        margin-bottom:2rem;
+    }
+.product-value{
+    background-color:#f9f9f9;
+    padding-bottom:4rem;
+    
+    .swiper-slide{
+        color:#ffffff;
+    }
+    .swiper-slide p{
+        font-size:.6rem;
+        line-height:1.5rem;
+    }
+    .swiper_slide p:first-child{
+        margin-top:1rem;
+    }
+    .swiper-slide p:last-child{
+        padding-bottom:2rem;
+    }
+    .swiper-slide .col-md-7,.col-md-5{
+        padding:0 0;
+        margin:0 0;
+    }
+    .swiper-slide .product-img{
+        height: 15rem;width: 100% !important
+    }
+    .product-img-icon{
+        width: 3rem; height: 3rem; margin-top: 2rem; margin-bottom: 1rem
+    }
+    .product-description{
+        background-color: #ef4e42;
+        height:15rem;
+    }
+}
+#pagination-content{
+    position: relative;top:1.5rem;
+    img{
+        width:3rem;
+        height:.5rem;
+        margin-left:2rem;
+    }
+    img:first-child{
+        margin-left:0 !important;
+    }
+}
+@media only screen and (max-width:768px){
+    .header {
+        height: 22rem;
+    }
+
+
+    #watch-robot .col-md-10 .col-md-2 img {
+        padding-top: 1.5rem;
+    }
+
+    #phyex-robot .col-md-8 p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    #marketProspect .col-md-6 .text-box {
+        img {
+            width: 50%;
+        }
+
+        p {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            overflow: hidden;
+            line-height: 1.1rem;
+        }
+    }
+
+
+    #serviceSupport {
+        height: 35.5rem;
+
+        .text-box {
+            padding: 3.4rem 3.5rem;
+            line-height: 7.5rem;
+            height: 13.7rem;
+            width: 12.1rem;
+            background: url(../image/polygon-bg.png) no-repeat center;
+            background-size: 77%;
+                margin-left: -2rem;
+            p {
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 3;
+                overflow: hidden;
+                line-height: 1.1rem;
+            }
+        }
+    }
+
+   #cooperationRequirements hr {
+    border-bottom: 1px dashed #ddd;
+    width: 68%;
+    margin-left: -5rem;
+    margin: 0 auto;
+}}
+
+.row {
+    margin: 0;
+}
+

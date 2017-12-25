@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>智能学园</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no,user-scalable=no">
+    <link rel="Shortcut Icon" href="favicon.ico">
+    <!-- CSS -->
+
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/robot-product.min.css" rel="stylesheet">
+
+    <!-- JS -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/utilities.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            $(".jiantou").attr("src", "../../assets/image/jiantou2.png");
+            $("#changePicture").attr("src", "../../assets/image/logo2.png");
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 50) {
+                    $('#headNav').addClass('navbar-fixed-top');
+                    $("#changePicture").attr("src", "../../assets/image/logo1.png");
+                    $(".jiantou").attr("src", "../../assets/image/jiantou.png");
+
+                } else {
+                    $('#headNav').removeClass('navbar-fixed-top');
+                    $("#changePicture").attr("src", "../../assets/image/logo2.png");
+                    $(".jiantou").attr("src", "../../assets/image/jiantou2.png");
+                }
+            });
+
+        })
+    </script>
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?319d97f61b1469e07d1421c9a8506589";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</head>
+
+<body>
+    <!--logo-->
+    <div class="container header">
+        <div id="headNav"></div>
+    </div>
+
+    <div class="row" id="watch-robot">
+        <div class="col-md-1  col-sm-1"></div>
+        <div class="col-md-10  col-sm-10">
+            <h1 class="title-md-font">智能穿戴设备</h1><hr class="center-block" />
+            <div class="col-md-1 col-sm-1"></div>
+            <div class="col-md-2  col-sm-2">
+                <img src="../assets/image/glyphicon1.png" />
+                <h2 class="title-sm-font ipad-style-padding">便携耐用</h2>
+                <p>重仅45g,LG进口电芯，可实现超过30天续航</p>
+            </div>
+            <div class="col-md-2  col-sm-2">
+                <img src="../assets/image/glyphicon2.png" />
+                <h2 class="title-sm-font">精确定位</h2>
+                <p>基于iBeacon协议的无线分布式 系统，实现高精度小范围定位</p>
+            </div>
+            <div class="col-md-2  col-sm-2">
+                <img src="../assets/image/glyphicon3.png" />
+                <h2 class="title-sm-font">运动检测</h2>
+                <p>通过幼儿辅助数据的采集和综合分析，获取更全面的分析报告。</p>
+            </div>
+            <div class="col-md-2  col-sm-2">
+                <img src="../assets/image/glyphicon4.png" />
+                <h2 class="title-sm-font">形态多样</h2>
+                <p>食品级液压硅胶材料，与幼儿衣物完美结合，实现无感穿戴。 </p>
+            </div>
+            <div class="col-md-2  col-sm-2">
+                <img src="../assets/image/glyphicon5.png" />
+                <h2 class="title-sm-font">自动识别</h2>
+                <p>  蓝牙自动接入智能幼儿园网络，作为幼儿识别ID</p>
+            </div>
+            <div class="col-md-1 col-sm-1"></div>
+        </div>
+        <div class="col-md-1  col-sm-1"></div>
+    </div>
+
+
+    <div class="row" id="phyex-robot">
+        <div class="col-md-2  col-sm-2"></div>
+        <div class="col-md-8  col-sm-8">
+            <h1 class="title-md-font">智能体测设备</h1>
+            <p class="title-explain  ipad-style-one-line">根据《3~6岁幼儿发展指南》，结合现代传感技术和无线通信技术所打造的一套易操作、测量方法科学、测量结果准确的体育健康测量设备工具</p>
+
+            <div class="col-md-4 col-sm-4 mask-box-left">
+
+                <h2 class="title-sm-font">测试流程</h2>
+                <img src="../assets/image/step-left.png" />
+
+            </div>
+            <div class="col-md-4 col-sm-4  mask-box-middle">
+                <h2 class="title-sm-font">方法科学</h2>
+                <p  class="ipad-style">使用压力传感技术配合消抖算法，实时感测整个过程中的压力变化和位移信息以及压力波动范围，得出更科学和详细的报告</p>
+
+            </div>
+            <div class="col-md-4 col-sm-4   mask-box-right">
+                <h2 class="title-sm-font">数据精准</h2>
+                <ul>
+                    <li>
+                        <p>数据精度高，通过传感技术和实时操作系统可实现微秒级精度测量</p>
+                    </li>
+                    <li>
+                        <p>所有的数据由系统自动测量，有效减少人为误差</p>
+                    </li>
+                    <li>
+                        <p>采集压力波动范围、位移时间变化系数等辅助参数，大幅度提高测试效果</p>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="col-md-2  col-sm-2"></div>
+    </div>
+
+
+    <!--footer-->
+    <div id="foot">
+    </div>
+</body>
+
+</html>

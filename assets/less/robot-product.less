@@ -1,0 +1,191 @@
+﻿@import "base.less";
+
+
+/*导航*/
+.header {
+    width: 100%;
+    height: 28rem;
+    background: url(../image/nav-robot-Product.png) no-repeat center 0rem;
+    background-size: contain;
+    padding-left: 0rem;
+}
+.li-service-active{
+    a{
+        color: #fff;
+    }
+}
+/*五环展示*/
+.titles-style {
+    width: 80%;
+    border-bottom: 1px dashed #dfdfdf;
+    padding-bottom: .75rem;
+}
+
+#watch-robot {
+    text-align: center;
+    height: 16rem;
+   .ipad-style-padding{
+          padding: .4rem 0 0rem 0;
+    }
+    h1 {
+        padding: 1rem;
+        font-size: .8rem;
+    }
+
+    hr {
+        border-bottom: 1px dashed #dddddd;
+        width: 80%;
+    }
+
+    .col-md-10 .col-md-2 {
+        text-align: center;
+        line-height: 1rem;
+
+        h2 {
+            margin: .5rem;
+        }
+
+        p {
+            font-size: .55rem;
+            text-align: left;
+            color: #959595;
+        }
+
+        img {
+            padding-top: 2.5rem;
+
+        }
+    }
+}
+
+
+
+#phyex-robot {
+    width: 100%;
+    height: 26rem;
+    text-align: center;
+    background: #fafafa;
+
+    .col-md-8 {
+
+        h1 {
+            padding: 1rem;
+            font-size: .8rem;
+        }
+
+        hr {
+            border-bottom: 1px dashed #dddddd;
+            width: 80%;
+        }
+
+        p {
+            padding-bottom: 2rem;
+            color: #666666;
+            font-size: .55rem;
+        }
+
+        h2 {
+            padding: 1rem;
+            font-size: .8rem;
+        }
+
+        .mask-box-left {
+            background: #fff;
+            height: 17rem;
+            border: 1px solid #e0e0e0;
+
+            img {
+                width: 13.5rem;
+                padding-top: 1.5rem;
+            }
+        }
+
+        .mask-box-middle {
+            height: 17rem;
+            padding: 0 1.25rem;
+            line-height: 1.2rem;
+            background: #fff url(../image/mask-box-middle.png) no-repeat center 8rem;
+            background-size: 7.5rem;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .mask-box-right {
+            background: #fff;
+            font-size: .55rem;
+            height: 17rem;
+            border: 1px solid #e0e0e0;
+
+            li {
+                text-align: left;
+                list-style-type: decimal;
+                width: 80%;
+                line-height: 1.3rem;
+                height: 4rem;
+                margin-left: 15%;
+                padding: 1rem .5rem;
+                border-bottom: 1px dotted #e0e0e0;
+            }
+        }
+    }
+}
+
+.row {
+    margin: 0;
+}
+
+
+
+
+
+@media only screen and (max-width:768px) {
+    .header {
+        height: 23rem;
+    }
+
+    #phyex-robot {
+        height: 32.3rem;
+    }
+
+    #watch-robot .col-md-10 .col-md-2 img {
+        padding-top: 1.5rem;
+    }
+
+    #watch-robot .col-md-10 .col-md-2 p {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        line-height: 1.1rem;
+    }
+
+    .ipad-style-one-line {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .mask-box-middle {
+
+        .ipad-style {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            line-height: 1.4rem;
+        }
+    }
+
+
+    #phyex-robot .col-md-8 .mask-box-right li {
+        list-style-type: decimal;
+        margin-left: 15%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        line-height: 1.4rem;
+        -webkit-box-orient: vertical;
+    }
+}

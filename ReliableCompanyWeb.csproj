@@ -1,0 +1,440 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BC2AD8A8-A4F6-4270-846C-89EFF873BA8D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CompanyWebsite</RootNamespace>
+    <AssemblyName>CompanyWebsite</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="ServiceStack, Version=4.0.52.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\ServiceStack.4.0.52\lib\net40\ServiceStack.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ServiceStack.Client, Version=4.0.52.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\ServiceStack.Client.4.0.52\lib\net40\ServiceStack.Client.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ServiceStack.Common, Version=4.0.52.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\ServiceStack.Common.4.0.52\lib\net40\ServiceStack.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ServiceStack.Interfaces, Version=4.0.0.0, Culture=neutral, PublicKeyToken=e06fbc6124f57c43, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\ServiceStack.Interfaces.4.0.52\lib\portable-wp80+sl5+net40+win8+monotouch+monoandroid+xamarin.ios10\ServiceStack.Interfaces.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ServiceStack.OrmLite, Version=4.0.52.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\ServiceStack.OrmLite.4.0.52\lib\net45\ServiceStack.OrmLite.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ServiceStack.OrmLite.SqlServer, Version=4.0.52.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\ServiceStack.OrmLite.SqlServer.4.0.52\lib\net45\ServiceStack.OrmLite.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ServiceStack.Server">
+      <HintPath>..\..\packages\ServiceStack.Server.4.0.50\lib\net45\ServiceStack.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Text, Version=4.0.52.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\ServiceStack.Text.4.0.52\lib\net40\ServiceStack.Text.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\css\about-us.min.css" />
+    <Content Include="assets\css\animate.css" />
+    <Content Include="assets\css\base.min.css" />
+    <Content Include="assets\css\big-data.min.css" />
+    <Content Include="assets\css\bootstrap-datepicker.min.css" />
+    <Content Include="assets\css\bootstrap.css" />
+    <Content Include="assets\css\bootstrap.min.css" />
+    <Content Include="assets\css\bootstrapValidator.min.css" />
+    <Content Include="assets\css\improve-service.min.css" />
+    <Content Include="assets\css\index.min.css" />
+    <Content Include="assets\css\jion-us.min.css" />
+    <Content Include="assets\css\phyEx-system.min.css" />
+    <Content Include="assets\css\robot-product.min.css" />
+    <Content Include="assets\css\select2.min.css" />
+    <Content Include="assets\css\swiper.min.css" />
+    <Content Include="assets\image\%24R0G8A7E.png" />
+    <Content Include="assets\image\agency-icon.png" />
+    <Content Include="assets\image\analyse-back-icon.png" />
+    <Content Include="assets\image\analyse-icon.png" />
+    <Content Include="assets\image\blanceBeam-01.png" />
+    <Content Include="assets\image\blanceBeam-02.png" />
+    <Content Include="assets\image\blanceBeam-03.png" />
+    <Content Include="assets\image\blanceBeam-04.png" />
+    <Content Include="assets\image\blanceBeam-05.png" />
+    <Content Include="assets\image\blanceBeam-06.png" />
+    <Content Include="assets\image\blanceBeam-07.png" />
+    <Content Include="assets\image\blanceBeam-10.png" />
+    <Content Include="assets\image\blanceBeam-09.png" />
+    <Content Include="assets\image\blanceBeam-08.png" />
+    <Content Include="assets\image\block-icon.png" />
+    <Content Include="assets\image\children.png" />
+    <Content Include="assets\image\cir-1.png" />
+    <Content Include="assets\image\cir-2.png" />
+    <Content Include="assets\image\cir-3.png" />
+    <Content Include="assets\image\cir-4.png" />
+    <Content Include="assets\image\cir-5.png" />
+    <Content Include="assets\image\collect-base-icon.png" />
+    <Content Include="assets\image\collect-highly-icon.png" />
+    <Content Include="assets\image\collect-huge-icon.png" />
+    <Content Include="assets\image\collect-overall-icon.png" />
+    <Content Include="assets\image\consult-icon.png" />
+    <Content Include="assets\image\cooperate-bei-log.png" />
+    <Content Include="assets\image\cooperate-shi-log.png" />
+    <Content Include="assets\image\cooperate-ti-log.png" />
+    <Content Include="assets\image\cooperationRequirements-icon1.png" />
+    <Content Include="assets\image\cooperationRequirements-icon2.png" />
+    <Content Include="assets\image\cooperationRequirements-icon3.png" />
+    <Content Include="assets\image\cooperationRequirements-icon4.png" />
+    <Content Include="assets\image\cooperationSteps-icon1.png" />
+    <Content Include="assets\image\cooperationSteps-icon2.png" />
+    <Content Include="assets\image\cooperationSteps-icon3.png" />
+    <Content Include="assets\image\cooperationSteps-icon4.png" />
+    <Content Include="assets\image\cooperationSteps-icon5.png" />
+    <Content Include="assets\image\data-backg.png" />
+    <Content Include="assets\image\data-banner.png" />
+    <Content Include="assets\image\data-show.png" />
+    <Content Include="assets\image\deal-icon.png" />
+    <Content Include="assets\image\direction-icon.png" />
+    <Content Include="assets\image\dotted.png" />
+    <Content Include="assets\image\equipment-blance.png" />
+    <Content Include="assets\image\equipment-icon.png" />
+    <Content Include="assets\image\equipment-box.png" />
+    <Content Include="assets\image\equipment-solution.png" />
+    <Content Include="assets\image\equipmentBox-01.png" />
+    <Content Include="assets\image\equipmentBox-02.png" />
+    <Content Include="assets\image\equipmentBox-03.png" />
+    <Content Include="assets\image\equipmentBox-04.png" />
+    <Content Include="assets\image\equipmentBox-05.png" />
+    <Content Include="assets\image\equipmentBox-06.png" />
+    <Content Include="assets\image\equipmentBox-07.png" />
+    <Content Include="assets\image\equipmentBox-08.png" />
+    <Content Include="assets\image\equipmentBox-09.png" />
+    <Content Include="assets\image\equipmentSolution-00.png" />
+    <Content Include="assets\image\equipmentSolution-01.png" />
+    <Content Include="assets\image\equipmentSolution-02.png" />
+    <Content Include="assets\image\equipmentSolution-03.png" />
+    <Content Include="assets\image\equipmentSolution-04.png" />
+    <Content Include="assets\image\equipmentSolution-05.png" />
+    <Content Include="assets\image\equipmentSolution-06.png" />
+    <Content Include="assets\image\equipmentSolution-07.png" />
+    <Content Include="assets\image\equipmentSolution-08.png" />
+    <Content Include="assets\image\equipmentSolution-09.png" />
+    <Content Include="assets\image\equipmentSolution-10.png" />
+    <Content Include="assets\image\family-icon.png" />
+    <Content Include="assets\image\favicon.ico" />
+    <Content Include="assets\image\five-block-icon1.png" />
+    <Content Include="assets\image\five-block-icon2.png" />
+    <Content Include="assets\image\five-block-icon3.png" />
+    <Content Include="assets\image\five-block-icon4.png" />
+    <Content Include="assets\image\five-block-icon5.png" />
+    <Content Include="assets\image\glyphicon1.png" />
+    <Content Include="assets\image\glyphicon2.png" />
+    <Content Include="assets\image\glyphicon3.png" />
+    <Content Include="assets\image\glyphicon4.png" />
+    <Content Include="assets\image\glyphicon5.png" />
+    <Content Include="assets\image\go-buy-btn-icon.png" />
+    <Content Include="assets\image\health-icon1.png" />
+    <Content Include="assets\image\health-icon2.png" />
+    <Content Include="assets\image\health-icon3.png" />
+    <Content Include="assets\image\health-icon4.png" />
+    <Content Include="assets\image\health-icon5.png" />
+    <Content Include="assets\image\health-icon6.png" />
+    <Content Include="assets\image\health-icon7.png" />
+    <Content Include="assets\image\health-icon8.png" />
+    <Content Include="assets\image\health-icon9.png" />
+    <Content Include="assets\image\hidde-swiper.png" />
+    <Content Include="assets\image\icon_底部logo.png" />
+    <Content Include="assets\image\index-skip-down-icon.png" />
+    <Content Include="assets\image\index-skip-up-icon.png" />
+    <Content Include="assets\image\jiantou.png" />
+    <Content Include="assets\image\jiantou2.png" />
+    <Content Include="assets\image\kefu.png" />
+    <Content Include="assets\image\kindergarten-icon.png" />
+    <Content Include="assets\image\log2.png" />
+    <Content Include="assets\image\logo-foot.png" />
+    <Content Include="assets\image\logo1.png" />
+    <Content Include="assets\image\logo2.png" />
+    <Content Include="assets\image\marketProspect-icon1.png" />
+    <Content Include="assets\image\marketProspect-icon2.png" />
+    <Content Include="assets\image\mask-box-middle.png" />
+    <Content Include="assets\image\myinfo-banner.png" />
+    <Content Include="assets\image\myinfo-content-icon.png" />
+    <Content Include="assets\image\nav-jionUs.png" />
+    <Content Include="assets\image\nav-phyEx-picture.png" />
+    <Content Include="assets\image\nav-picture.png" />
+    <Content Include="assets\image\nav-robot-Product.png" />
+    <Content Include="assets\image\nav-service.png" />
+    <Content Include="assets\image\now-swiper.png" />
+    <Content Include="assets\image\personal-icon.png" />
+    <Content Include="assets\image\phy-icon-left.png" />
+    <Content Include="assets\image\phy-icon-left2.png" />
+    <Content Include="assets\image\phy-icon-right.png" />
+    <Content Include="assets\image\phy-icon-right2.png" />
+    <Content Include="assets\image\phy-icon-top.png" />
+    <Content Include="assets\image\phy-icon-top2.png" />
+    <Content Include="assets\image\phyEx-background.png" />
+    <Content Include="assets\image\phyEx-title.png" />
+    <Content Include="assets\image\polygon-bg.png" />
+    <Content Include="assets\image\process-img.png" />
+    <Content Include="assets\image\product-agency.png" />
+    <Content Include="assets\image\product-family.png" />
+    <Content Include="assets\image\product-kindergarten.png" />
+    <Content Include="assets\image\product.png" />
+    <Content Include="assets\image\service-icon.png" />
+    <Content Include="assets\image\service-icon1.png" />
+    <Content Include="assets\image\service-icon2.png" />
+    <Content Include="assets\image\service-icon3.png" />
+    <Content Include="assets\image\service-icon4.png" />
+    <Content Include="assets\image\step-left.png" />
+    <Content Include="assets\image\strut-cms-icon.png" />
+    <Content Include="assets\image\strut-core-icon.png" />
+    <Content Include="assets\image\strut-report-icon.png" />
+    <Content Include="assets\image\top-icon.png" />
+    <Content Include="assets\image\u-border-fff.png" />
+    <Content Include="assets\image\u-border.png" />
+    <Content Include="assets\image\unscramble-icon.png" />
+    <Content Include="assets\image\video-picture.png" />
+    <Content Include="assets\image\weixin.png" />
+    <Content Include="assets\image\whole-class-icon.png" />
+    <Content Include="assets\image\whole-kdg-icon.png" />
+    <Content Include="assets\js\swiper.min.js" />
+    <Content Include="assets\less\about-us.css">
+      <DependentUpon>about-us.less</DependentUpon>
+    </Content>
+    <Content Include="assets\less\about-us.min.css">
+      <DependentUpon>about-us.css</DependentUpon>
+    </Content>
+    <Content Include="assets\less\base.css">
+      <DependentUpon>base.less</DependentUpon>
+    </Content>
+    <Content Include="assets\less\base.min.css">
+      <DependentUpon>base.css</DependentUpon>
+    </Content>
+    <Content Include="assets\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="assets\js\bootstrap-datepicker.min.js" />
+    <Content Include="assets\js\bootstrap.min.js" />
+    <Content Include="assets\js\bootstrapValidator.min.js" />
+    <Content Include="assets\js\handlebars.min.js" />
+    <Content Include="assets\js\jquery.min.js" />
+    <Content Include="assets\js\require.min.js" />
+    <Content Include="assets\js\select2.min.js" />
+    <Content Include="assets\less\jion-us.css">
+      <DependentUpon>jion-us.less</DependentUpon>
+    </Content>
+    <Content Include="assets\less\jion-us.min.css">
+      <DependentUpon>jion-us.css</DependentUpon>
+    </Content>
+    <Content Include="assets\less\improve-service.css">
+      <DependentUpon>improve-service.less</DependentUpon>
+    </Content>
+    <Content Include="assets\less\improve-service.min.css">
+      <DependentUpon>improve-service.css</DependentUpon>
+    </Content>
+    <Content Include="assets\less\big-data.css">
+      <DependentUpon>big-data.less</DependentUpon>
+    </Content>
+    <Content Include="assets\less\big-data.min.css">
+      <DependentUpon>big-data.css</DependentUpon>
+    </Content>
+    <Content Include="assets\less\robot-product.css">
+      <DependentUpon>robot-product.less</DependentUpon>
+    </Content>
+    <Content Include="assets\less\robot-product.min.css">
+      <DependentUpon>robot-product.css</DependentUpon>
+    </Content>
+    <Content Include="assets\less\phyEx-system.css">
+      <DependentUpon>phyEx-system.less</DependentUpon>
+    </Content>
+    <Content Include="assets\less\phyEx-system.min.css">
+      <DependentUpon>phyEx-system.css</DependentUpon>
+    </Content>
+    <Content Include="assets\less\index.css">
+      <DependentUpon>index.less</DependentUpon>
+    </Content>
+    <Content Include="assets\less\index.min.css">
+      <DependentUpon>index.css</DependentUpon>
+    </Content>
+    <Content Include="assets\locales\bootstrap-datepicker.zh-CN.min.js" />
+    <Content Include="gruntfile.js" />
+    <Content Include="index.html" />
+    <Content Include="packages.config" />
+    <Content Include="package.json" />
+    <Content Include="bower.json" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="assets\less\base.less" />
+    <Content Include="assets\less\base.css.map">
+      <DependentUpon>base.css</DependentUpon>
+    </Content>
+    <Content Include="assets\less\index.less" />
+    <Content Include="assets\less\index.css.map">
+      <DependentUpon>index.css</DependentUpon>
+    </Content>
+    <Content Include="assets\less\phyEx-system.less" />
+    <Content Include="assets\less\phyEx-system.css.map">
+      <DependentUpon>phyEx-system.css</DependentUpon>
+    </Content>
+    <Content Include="assets\less\robot-product.less" />
+    <Content Include="assets\less\robot-product.css.map">
+      <DependentUpon>robot-product.css</DependentUpon>
+    </Content>
+    <Content Include="assets\less\big-data.less" />
+    <Content Include="assets\less\big-data.css.map">
+      <DependentUpon>big-data.css</DependentUpon>
+    </Content>
+    <Content Include="assets\less\improve-service.less" />
+    <Content Include="assets\less\improve-service.css.map">
+      <DependentUpon>improve-service.css</DependentUpon>
+    </Content>
+    <Content Include="assets\less\about-us.less" />
+    <Content Include="assets\less\about-us.css.map">
+      <DependentUpon>about-us.css</DependentUpon>
+    </Content>
+    <None Include="assets\less\jion-us.less" />
+    <Content Include="assets\less\jion-us.css.map">
+      <DependentUpon>jion-us.css</DependentUpon>
+    </Content>
+    <None Include="Properties\PublishProfiles\CompanyWebsite.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="pages\AboutUs.html" />
+    <Content Include="pages\EquipmentSolution.html" />
+    <Content Include="pages\EquipmentBox.html" />
+    <Content Include="pages\ImproveService.html" />
+    <Content Include="pages\BigData.html" />
+    <Content Include="pages\favicon.ico" />
+    <Content Include="assets\image\four-box-two.jpg" />
+    <Content Include="pages\Index.html" />
+    <Content Include="assets\js\physical.js" />
+    <Content Include="assets\js\utilities.js" />
+    <Content Include="pages\BlanceBeam.html" />
+    <Content Include="pages\JoinUs.html" />
+    <Content Include="pages\PhyExSystem.html" />
+    <Content Include="pages\RobotProduct.html" />
+    <Content Include="pages\template\ElectronicProtocol.html" />
+    <Content Include="pages\template\Foot.html" />
+    <Content Include="pages\template\Head.html" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BabyBusSSApi\BabybusSSApi.DatabaseModel\BabybusSSApi.DatabaseModel.csproj">
+      <Project>{e58b0fe3-eaa1-4687-9639-92197c06aff9}</Project>
+      <Name>BabybusSSApi.DatabaseModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BabyBusSSApi\BabyBusSSApi.ServiceInterface\Client.ServiceInterface.csproj">
+      <Project>{09512B7A-80FA-4241-A045-DC9FC9EE8EA2}</Project>
+      <Name>Client.ServiceInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BabyBusSSApi\BabyBusSSApi.ServiceModel\Client.ServiceModel.csproj">
+      <Project>{53e82ac1-dd1d-4c66-b55f-f9f4acfb2f40}</Project>
+      <Name>Client.ServiceModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>39240</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:39240/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+    <MonoDevelop>
+      <Properties>
+        <XspParameters Port="8080" Address="127.0.0.1" SslMode="None" SslProtocol="Default" KeyType="None" CertFile="" KeyFile="" PasswordOptions="None" Password="" Verbose="True" />
+      </Properties>
+    </MonoDevelop>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

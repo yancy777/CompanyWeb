@@ -1,0 +1,245 @@
+﻿
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>改善服务</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <link rel="Shortcut Icon" href="favicon.ico">
+    <!-- CSS -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/jion-us.min.css" rel="stylesheet">
+    <link href="../assets/css/swiper.min.css" rel="stylesheet" />
+    <!-- JS -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/utilities.js"></script>
+    <script src="../assets/js/swiper.min.js"></script>
+  
+    <script type="text/javascript">
+        $(function () {
+            $("#changePicture").attr("src", "../../assets/image/logo2.png");
+            $("#jiantou").attr("src", "../../assets/image/jiantou2.png");
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 50) {
+                    $('#headNav').addClass('navbar-fixed-top');
+                    $("#changePicture").attr("src", "../../assets/image/logo1.png");
+                    $("#jiantou").attr("src", "../../assets/image/jiantou.png");
+
+                } else {
+                    $('#headNav').removeClass('navbar-fixed-top');
+                    $("#changePicture").attr("src", "../../assets/image/logo2.png");
+                    $("#jiantou").attr("src", "../../assets/image/jiantou2.png");
+                }
+            });
+
+            $(".text-center").hover(
+                function () {
+                $(".swiper-button-next").css("display", "block");
+                $(".swiper-button-prev").css("display", "block");
+                },
+                function () {
+                    $(".swiper-button-next").css("display", "none");
+                    $(".swiper-button-prev").css("display", "none");
+                }
+            );
+          
+            var mySwiper = new Swiper('.swiper-container', {
+                direction: 'horizontal',
+                loop: true,
+                speed: 2000,
+                autoplay: 2000,
+                // 如果需要分页器
+                pagination: '.swiper-pagination',
+                paginationType: 'custom',
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev',
+                paginationCustomRender: function (swiper, current, total) {
+                    for (var i = 1; i < 4; i++) {
+                        $("#img-swiper-" + i).attr("src", "../assets/image/hidde-swiper.png");
+                    }
+                    $("#img-swiper-" + current).attr("src", "../assets/image/now-swiper.png");
+                }
+            });
+        })
+    </script>
+</head>
+
+<body>
+
+    <!--logo-->
+    <div class="container header">
+        <div id="headNav"></div>
+    </div>
+    <!-- 市场前景 -->
+    <div class="row" id="marketProspect">
+        <div class="col-md-3 col-sm-3"></div>
+        <div class="col-md-6  col-sm-6 ">
+            <h1>市场前景</h1><hr class="center-block" />
+            <div class="col-md-6  col-sm-6 market-padding-top">
+                <div class="text-box">
+                    <img src="../assets/image/marketProspect-icon1.png" />
+                    <h3>政策支持</h3>
+                    <p>随着国家对国民体质改善的重视，在有限的时间内做有针对性的改善成为幼教界急需解决的问题。</p>
+                </div>
+            </div>
+            <div class="col-md-6  col-sm-6  market-padding-top">
+                <div class="text-box">
+                    <img src="../assets/image/marketProspect-icon2.png" />
+                    <h3>市场广阔</h3>
+                    <p>据教育部统计，全国3-6岁幼儿园适龄儿童3700万，而幼儿体质健康刚刚提上日程，市场十分广阔！</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-3"></div>
+    </div>
+    <!-- 产品支持 -->
+    <div class="row" id="serviceSupport">
+        <div class="col-md-3 col-sm-3"></div>
+        <div class="col-md-6  col-sm-6">
+            <h1>服务与支持</h1><hr class="center-block" /><br /><br />
+            <div class="row-top">
+                <div class="col-md-4  col-sm-4">
+                    <div class="text-box">
+                        <h3>品牌支持</h3>
+                        <p>授权合作代理商为指定区域唯一品牌合作单位，保证其利益。随着业务推进，总部会逐步加大对地方宣传力度。</p>
+                    </div>
+                </div>
+                <div class="col-md-4  col-sm-4">
+                    <div class="text-box">
+                        <h3>系统培训</h3>
+                        <p>从测量体系，改善体系，业务知识三个方面，对合作方进行系统培训，短期掌握方法，快速拓展业务。支持线上培训。</p>
+                    </div>
+                </div>
+                <div class="col-md-4  col-sm-4">
+                    <div class="text-box">
+                        <h3>教学资源</h3>
+                        <p>睿莱参考了国内外百余篇著作及专业论文，以最科学、最前沿、最实用为三大标准，集成了睿莱幼儿体育健康系统的科学核心，为业务提供理论支持。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 多边形下 -->
+            <div class="row-bottom">
+                <div class="col-md-2 col-sm-2"></div>
+                <div class="col-md-4  col-sm-4">
+                    <div class="text-box">
+                        <h3>运营管理培训</h3>
+                        <p>睿莱有一套完整的运营和管理培训体系，帮助合伙人开拓市场。</p>
+                    </div>
+                </div>
+                <div class="col-md-4  col-sm-4">
+                    <div class="text-box">
+                        <h3>政策鼓励</h3>
+                        <p>已有项目优先续约，同条件下新增项目优先合作，合作经营优先选择，及区域合作唯一性。</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-2"></div>
+            </div>
+            <div class="col-md-3 col-sm-3"></div>
+        </div>
+    </div>
+    <!--产品价值-->
+    <div class="row product-value text-center">
+        <p class="product-title">产品价值</p>
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <img src="../assets/image/product-agency.png" alt="" class="product-img" />
+                            </div>
+                            <div class="col-md-5 product-description">
+                                <img src="../assets/image/agency-icon.png" alt="" class="product-img-icon" />
+                                <h4>建立并提升机构体育特色</h4>
+                                <p style="margin-top: 1rem;">通过科学精准的测量及体质分析报告建立机构的专业形象</p>
+                                <p>为孩子建立体质档案，为幼儿园建立园所档案，方便续约园所的持续服务</p>
+                                <p>机构通过后台系统服务园所更便捷</p>
+                                <p>通过对报告结果的分析，升级给园所的体智能课程</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <img src="../assets/image/product-kindergarten.png" alt="" class="product-img" />
+                            </div>
+                            <div class="col-md-5 product-description">
+                                <img src="../assets/image/kindergarten-icon.png" alt="" class="product-img-icon" />
+                                <h4>并提升机构体育</h4>
+                                <p style="margin-top: 1rem;">让园所更懂孩子的体质，更认可机构的工作价值</p>
+                                <p>•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;简单易懂的体质分析系统，专业科学的园所报告，让园所知</p>
+                                <p>道全园整体的体质和动作发展水平</p>
+                                <p>•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;完善幼儿园体质档案用于双高双普、评级等监管部门的检查</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <img src="../assets/image/product-family.png" alt="" class="product-img" />
+                            </div>
+                            <div class="col-md-5 product-description">
+                                <img src="../assets/image/family-icon.png" alt="" class="product-img-icon" />
+                                <h4>提升家长满意度</h4>
+                                <p style="margin-top: 1rem;">让家长更懂孩子的体质，更认可机构的工作价值</p>
+                                <p>•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;通过微网站、APP让家长知道幼儿的体质和动作发展情况并</p>
+                                <p>为家长同步孩子所在园所的体质提升课程安排</p>
+                                <p>•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;通过微网站、APP为孩子提供体质提升建议，真正实现家园共育</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row swiper-pagination" id="pagination-content">
+                <img id="img-swiper-1" alt=""/>
+                <img id="img-swiper-2" alt=""/>
+                <img id="img-swiper-3" alt=""/>
+            </div>
+            <div class="swiper-button-next" style="right: 1rem;display:none"></div>
+            <div class="swiper-button-prev" style="left: 1rem;display:none"></div>
+        </div>
+    </div>
+
+    <!--合作流程-->
+    <div class="row text-center">
+        <p class="product-title">合作流程</p>
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <img src="../assets/image/process-img.png" alt="" style="height: 17rem; width: 50rem;" />
+        </div>
+    </div>
+
+    <!--合作要求 -->
+    <div class="row" id="cooperationRequirements">
+        <div class="col-md-2 col-sm-2"></div>
+        <div class="col-md-8 col-md-8">
+            <h1>合作要求</h1><hr class="center-block" /><br /><br />
+            <div class="col-md-2 col-sm-2"></div>
+            <div class="col-md-4  col-sm-4">
+                <div class="col-md-5  col-sm-5"><img src="../assets/image/cooperationRequirements-icon1.png" /></div>
+                <div class="col-md-7  col-sm-7"><p>商业信誉良好<br /> 有一定竞争力。</p></div>
+                <div class="col-md-5  col-sm-5"><img src="../assets/image/cooperationRequirements-icon2.png" /></div>
+                <div class="col-md-7  col-sm-7"><p>持续的业务开展能力<br />  固定的办公场所</p></div>
+            </div>
+            <div class="col-md-4  col-sm-4">
+                <div class="col-md-5  col-sm-5"><img src="../assets/image/cooperationRequirements-icon3.png" /></div>
+                <div class="col-md-7  col-sm-7"><p>认同睿莱理念 <br /> 有意向长期合作</p></div>
+                <div class="col-md-5  col-sm-5"><img src="../assets/image/cooperationRequirements-icon4.png" /></div>
+                <div class="col-md-7  col-sm-7"><p>严格履行合约<br />  积极拓展市场</p></div>
+            </div>
+            <div class="col-md-2 col-sm-2"></div>
+        </div>
+        <div class="col-md-2 col-sm-2"></div>
+    </div>
+
+    <!--footer-->
+    <div id="foot"></div>
+</body>
+
+</html>
